@@ -29,12 +29,20 @@ void Kakeibo::Input(int mon)
 void Kakeibo::Output(int mon)
 {
 	zankin -= mon;
-	return;
-}
+		if(zankin < 0){
+		cout << "”jŽY‚·‚éB" <<endl;
+		};
+	}
+	//return;
+//}
 void Kakeibo::Disp(void)
 {
+	if(zankin < 0){
+		cout << "‚à‚¤”jŽY‚µ‚Ä‚¢‚é‚æB" <<endl;
+	};
+	//}
 	cout << "Žc‹à‚Í" << zankin << "‰~‚Å‚·B"<<endl;
-	return;
+	//return;
 }
 
 int Kakeibo::GetZankin(void)//ƒtƒ@ƒCƒ‹‚ð“Ç‚Ýž‚ñ‚Å‰Šú’l‚ð—pˆÓ‚·‚é 
